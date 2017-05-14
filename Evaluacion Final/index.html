@@ -4,18 +4,125 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta name="author" content="fredy andres gomez montoya">
+        <meta name='mobile-web-app-capable' content='yes'>
         <meta name="keywords" content="html,imagenes,videos">
-        <meta name="description" content="Evaluacion final fundamentos basicos de html">
+        <meta name="description" content="Frameworks-y-Librer-as-CSS">
+
+        <link rel='stylesheet' href='css/bootstrap.min.css'>
+        <link rel='stylesheet' href='css/estilos.css'>
+        <script src='js/bootstrap.min.js'></script>
+
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/estilo.css" type="text/css" rel="stylesheet">
+
         <title>Musica</title>
+
     </head>
     <body>
-        <header>
+        <header class="container" id="cabecera">
+
+          <div class="row" id="encabezado">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="row">
+                <div class="col-lg-6">
+                  <img src="img/logo.jpg" alt="Imagen Logo" class="img-responsive" id="img-logo">
+                </div>
+                <div class="col-lg-6 text-center">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="img-redes">
+              <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Imagen Facebook" class="img-responsive img-circle"></a>
+              <a href="https://twitter.com"><img src="img/twitter.png" alt="Imagen Twitter" class="img-responsive img-circle"></a>
+              <a href="https://www.instagram.com"><img src="img/instagram.jpg" alt="Imagen Instagram" class="img-responsive img-circle"></a>
+              <a href="https://plus.google.com"><img src="img/google.png" alt="Imagen Google" class="img-responsive img-circle"></a>
+            </div>
+          </div>
+          <!-- Menu -->
+          <div class="row" id="menu">
+            <div class="col-lg-12">
+              <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Grupos</a></li>
+                <li><a href="#">Top10</a></li>
+                <li><a href="#">Letras</a></li>
+                <li><a href="#">Acordes</a></li>
+              </ul>
+            </div>
+          </div>
 
         </header>
-        <section>
-            <article>
 
-            </article>
+        <section class="container" id="contenido">
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h3>EKHYMOSIS - Juanes</h3>
+                  <p class="text-justify">Ekhymosis nació en Medellín en 1987; relata Juanes: "Mi guitarra necesitaba reparación y me encontré con Andy quien sabía repararla, desde ese día no hemos parado. Teníamos que buscarle un nombre al grupo, algo que definiera nuestra música y entre los que teníamos nos gustó como sonaba Ekhymosis (significa el moretón que sale en la piel después de un golpe), era algo distinto, particular".</p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="img/ekhymosis.jpg" alt="Ekhymosis" class="img-responsive img-thumbnail">
+                </div>
+              </div>
+              <div class="row" id="comentario">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true" id="img-comentario"></span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                  <textarea name="comentario" rows="4" placeholder="Comentario"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="img/kraken-4.jpg" alt="Kraken" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-lg-8">
+                  <h3>KRAKEN - Elkin Ramírez</h3>
+                  <p class="text-justify">Kraken nace oficialmente el 18 de junio de 1984 con este nombre, con un repertorio de temas interpretados pero con algo característico, las composiciones eran en español. El inicio de este proyecto se plasmó con el concierto de lanzamiento oficial en Medellín, en el teatro Lux de Manrique. El grupo adquirió carácter, fuerza y nacen entonces las primeras canciones, temas con un sonido con gran influencia del Heavy metal y el Hard rock.
+                  </p>
+                </div>
+              </div>
+              <div class="row" id="comentario">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true" id="img-comentario"></span>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                  <textarea name="comentario" rows="4" placeholder="Comentario"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 visible-lg">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-search"></span>
+                </span>
+                <input type="text" class="form-control" placeholder="Buscar por ...">
+              </div>
+              <br>
+              <div class="list-group">
+                <a href="#" class="list-group-item">Historia de la Musica</a>
+                <a href="#" class="list-group-item">Evolución Musical durante el siglo 20</a>
+                <a href="#" class="list-group-item">Los artistas más destacados de los años 70s</a>
+                <a href="#" class="list-group-item">TOP 100 de los años 70s</a>
+                <a href="#" class="list-group-item">Los artistas más destacados de los años 80s</a>
+                <a href="#" class="list-group-item">TOP 100 de los años 80s</a>
+                <a href="#" class="list-group-item">Los artistas más destacados de los años 90s</a>
+                <a href="#" class="list-group-item">TOP 100 de los años 90s</a>
+                <a href="#" class="list-group-item">Los artistas más destacados del nuevo milenio</a>
+                <a href="#" class="list-group-item">TOP 100 del nuevo milenio</a>
+                <a href="#" class="list-group-item">Ritmos musicales hoy</a>
+                <a href="#" class="list-group-item">Rock un estilo de vida</a>
+                <a href="#" class="list-group-item">El fenomeno Regaeton</a>
+              </div>
+            </div>
+          </div>
+
         </section>
         <nav>
             <ul>
